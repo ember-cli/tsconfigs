@@ -1,0 +1,9 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "description": "monorepo root",
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
