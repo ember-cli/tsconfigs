@@ -1,0 +1,31 @@
+{
+  "solution": {
+    "@ember/app-tsconfig": {
+      "impact": "major",
+      "oldVersion": "0.0.0",
+      "newVersion": "1.0.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        }
+      ],
+      "pkgJSONPath": "./@ember/app-tsconfig/package.json"
+    },
+    "@ember/library-tsconfig": {
+      "impact": "major",
+      "oldVersion": "0.0.0",
+      "newVersion": "1.0.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        }
+      ],
+      "pkgJSONPath": "./@ember/library-tsconfig/package.json"
+    }
+  },
+  "description": "## Release (2025-04-03)\n\n* @ember/app-tsconfig 1.0.0 (major)\n* @ember/library-tsconfig 1.0.0 (major)\n\n#### :boom: Breaking Change\n* `@ember/app-tsconfig`, `@ember/library-tsconfig`\n  * [#1](https://github.com/ember-cli/tsconfigs/pull/1) Initial implementation ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+}
