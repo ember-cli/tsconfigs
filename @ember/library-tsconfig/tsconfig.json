@@ -1,0 +1,93 @@
+// Copied from @tsconfig/ember @ 3.0.9, where the fork begins.
+// We don't intent to keep the versions in sync
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "docs": "https://guides.emberjs.com/release/typescript/",
+
+  // This is the base config used by Ember apps and addons. When actually used
+  // via Ember CLI (e.g. ember-cli-typescript's blueprint), it additionally has
+  // `compilerOptions.baseUrl`, `compilerOptions.paths`, and `include` set.
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+
+    // We don't want to include types dependencies in our compiled output, so tell TypeScript
+    // to enforce using `import type` instead of `import` for Types.
+    "verbatimModuleSyntax": true,
+
+    // Trying to check Ember apps and addons with `allowJs: true` is a recipe
+    // for many unresolveable type errors, because with *considerable* extra
+    // configuration it ends up including many files which are *not* valid and
+    // cannot be: they *appear* to be resolve-able to TS, but are in fact not in
+    // valid Node-resolveable locations and may not have TS-ready types. This
+    // will likely improve over time
+    "allowJs": false,
+
+    // Practically, it is *nearly* impossible to have every type-checked
+    // package in your dependency graph to have compatible types.
+    // Good stewards of the ecosystem may opt to set this to false and try to 
+    // fix packages with failures, but for most people, the error information
+    // is inactionable noise.
+    "skipLibCheck": true,
+
+    // --- TS for SemVer Types compatibility
+    // Strictness settings -- you should *not* change these: Ember code is not
+    // guaranteed to type check with these set to looser values.
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Interop: this is viral and will require anyone downstream of your package
+    // to *also* set them to true. However, this represents the way that
+    // bundlers actually work, and is future-compatible with the closest module
+    // modes: "nodenext" in TS 4.7+ and "mixed" in 5.0+ mode. Since Ember apps
+    // and addons never emit with `tsc`, this is safe: it makes type-checking do
+    // the right thing, but does not result in changes to what gets emitted. We
+    // intentionally leave `esModuleInterop` unset, so that it gets whatever TS
+    // provides as the default for the currently-specified `module` mode.
+    "allowSyntheticDefaultImports": true,
+
+    // --- Lint-style rules
+
+    // TypeScript also supplies some lint-style checks; nearly all of them are
+    // better handled by ESLint with the `@typescript-eslint`. This one is more
+    // like a safety check, though, so we leave it on.
+    "noPropertyAccessFromIndexSignature": true,
+
+    // --- Compilation/integration settings
+    // Setting `noEmitOnError` here allows tools trying to respect the tsconfig
+    // to still emit code without breaking on errors.
+    // Errors are still reported in the CLI when running `tsc` or `glint`,
+    // but the errors won't prevent code from being emitted.
+    // This helps hasten development by allowing devs to prototype before coming
+    // to a decision on what they want their types to be.
+    "noEmitOnError": false,
+
+    // We use Babel for emitting runtime code, because it's very important that
+    // we always and only use the same transpiler for non-stable features, in
+    // particular decorators. If you were to change this to `true`, it could
+    // lead to accidentally generating code with `tsc` instead of Babel, and
+    // could thereby result in broken code at runtime.
+    "noEmit": true,
+
+    // Ember makes heavy use of decorators; TS does not support them at all
+    // without this flag.
+    "experimentalDecorators": true,
+
+    // We don't use TS for compilation, so we can disable these.
+    // Library authors should set declaration and declarationMap to true, however
+    "declaration": true,
+    "declarationMap": true,
+
+    // We don't compile with TS
+    "inlineSourceMap": false,
+    "inlineSources": false,
+
+    // Don't implicitly pull in declarations from `@types` packages unless we
+    // actually import from them AND the package in question doesn't bring its
+    // own types. 
+    // 
+    // You  may wish to override this e.g. with `"types": ["ember-source/types"]`
+    "types": []
+  }
+}

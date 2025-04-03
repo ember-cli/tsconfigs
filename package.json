@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "description": "monorepo root",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ember-cli/tsconfigs.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "devDependencies": {
+    "release-plan": "^0.16.0"
+  }
+}
