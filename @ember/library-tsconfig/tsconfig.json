@@ -79,14 +79,14 @@
     // without this flag.
     "experimentalDecorators": true,
 
-    // We don't use TS for compilation, so we can disable these.
-    // Library authors should set declaration and declarationMap to true, however
+    // We don't use TS for compilation, only for generating declarations. So we
+    // enable declarations and declaration maps (which, when developing a
+    // library in an IDE, are useful for ctrl-clicking through to the actual
+    // source code rather than the `.d.ts` file), but we do not enable source
+    // maps, since those will be handled separately in the compilation step,
+    // e.g. via `rollup` and `@babel/plugin-transform-typescript`.
     "declaration": true,
     "declarationMap": true,
-
-    // We don't compile with TS
-    "inlineSourceMap": false,
-    "inlineSources": false,
 
     // Don't implicitly pull in declarations from `@types` packages unless we
     // actually import from them AND the package in question doesn't bring its
