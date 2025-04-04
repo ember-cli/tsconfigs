@@ -16,6 +16,11 @@
     // to enforce using `import type` instead of `import` for Types.
     "verbatimModuleSyntax": true,
 
+    // v2 addons build using `rollup` and `@babel/plugin-transform-typescript`,
+    // which requires file extensions on relative path imports, so we need to
+    // support importing `.ts` files.
+    "allowImportingTsExtensions": true,
+
     // Trying to check Ember apps and addons with `allowJs: true` is a recipe
     // for many unresolveable type errors, because with *considerable* extra
     // configuration it ends up including many files which are *not* valid and
