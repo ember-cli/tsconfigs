@@ -74,6 +74,17 @@
     // without this flag.
     "experimentalDecorators": true,
 
+    // https://www.typescriptlang.org/tsconfig#allowImportingTsExtensions
+    //
+    // We want our tooling to know how to resolve our custom files so the appropriate plugins
+    // can do the proper transformations on those files.
+    // 
+    // For classic apps (broccoli), extensions can't be used, but in 
+    // v2 apps (vite, etc), extensions may be preferred.
+    // This does not require extensions, but allows them.
+    "allowImportingTsExtensions": true,
+
+
     // Don't implicitly pull in declarations from `@types` packages unless we
     // actually import from them AND the package in question doesn't bring its
     // own types. 
