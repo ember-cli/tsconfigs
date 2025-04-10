@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-04-10)
+
+* @ember/app-tsconfig 1.0.2 (patch)
+
+#### :bug: Bug Fix
+* `@ember/app-tsconfig`
+  * [#6](https://github.com/ember-cli/tsconfigs/pull/6) Add allowImportingTsExtensions to the app tsconfig ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-04-04)
 
 * @ember/app-tsconfig 1.0.1 (patch)
