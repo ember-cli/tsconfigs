@@ -2,6 +2,21 @@
 
 ## Release (2025-04-10)
 
+* @ember/app-tsconfig 1.0.3 (patch)
+* @ember/library-tsconfig 1.1.1 (patch)
+
+#### :bug: Bug Fix
+* `@ember/app-tsconfig`, `@ember/library-tsconfig`
+  * [#10](https://github.com/ember-cli/tsconfigs/pull/10) Disable noPropertyAccessFromIndexSignature ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :memo: Documentation
+* [#8](https://github.com/ember-cli/tsconfigs/pull/8) Add npm badges to the main readme ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-04-10)
+
 * @ember/app-tsconfig 1.0.2 (patch)
 
 #### :bug: Bug Fix
