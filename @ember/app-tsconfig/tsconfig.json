@@ -49,10 +49,11 @@
 
     // --- Lint-style rules
 
-    // TypeScript also supplies some lint-style checks; nearly all of them are
-    // better handled by ESLint with the `@typescript-eslint`. This one is more
-    // like a safety check, though, so we leave it on.
-    "noPropertyAccessFromIndexSignature": true,
+    // https://www.typescriptlang.org/tsconfig/#noPropertyAccessFromIndexSignature
+    //
+    // This setting was historically turned on (true) in @tsconfig/ember, 
+    // But it's mostly been unhelpful, and makes type-ergonomics worse.
+    "noPropertyAccessFromIndexSignature": false,
 
     // --- Compilation/integration settings
     // Setting `noEmitOnError` here allows tools trying to respect the tsconfig
