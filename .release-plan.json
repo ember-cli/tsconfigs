@@ -2,34 +2,20 @@
   "solution": {
     "@ember/app-tsconfig": {
       "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
+      "oldVersion": "1.0.1",
+      "newVersion": "1.0.2",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
+          "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
       "pkgJSONPath": "./@ember/app-tsconfig/package.json"
     },
     "@ember/library-tsconfig": {
-      "impact": "minor",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.1.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
-        }
-      ],
-      "pkgJSONPath": "./@ember/library-tsconfig/package.json"
+      "oldVersion": "1.1.0"
     }
   },
-  "description": "## Release (2025-04-04)\n\n* @ember/app-tsconfig 1.0.1 (patch)\n* @ember/library-tsconfig 1.1.0 (minor)\n\n#### :rocket: Enhancement\n* `@ember/library-tsconfig`\n  * [#3](https://github.com/ember-cli/tsconfigs/pull/3) Enable `allowImportingTsExtensions` in libraries ([@bendemboski](https://github.com/bendemboski))\n\n#### :memo: Documentation\n* `@ember/app-tsconfig`, `@ember/library-tsconfig`\n  * [#4](https://github.com/ember-cli/tsconfigs/pull/4) Clean up sourcemaps options/comments ([@bendemboski](https://github.com/bendemboski))\n\n#### Committers: 1\n- Ben Demboski ([@bendemboski](https://github.com/bendemboski))\n"
+  "description": "## Release (2025-04-10)\n\n* @ember/app-tsconfig 1.0.2 (patch)\n\n#### :bug: Bug Fix\n* `@ember/app-tsconfig`\n  * [#6](https://github.com/ember-cli/tsconfigs/pull/6) Add allowImportingTsExtensions to the app tsconfig ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
