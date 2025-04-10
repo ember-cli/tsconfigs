@@ -80,6 +80,9 @@
     // e.g. via `rollup` and `@babel/plugin-transform-typescript`.
     "declaration": true,
     "declarationMap": true,
+    "emitDeclarationOnly": true,
+    // Required for emitDeclarationOnly to actually emit declarations
+    "noEmit": false,
 
     // Don't implicitly pull in declarations from `@types` packages unless we
     // actually import from them AND the package in question doesn't bring its
