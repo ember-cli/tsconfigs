@@ -47,14 +47,6 @@
     // provides as the default for the currently-specified `module` mode.
     "allowSyntheticDefaultImports": true,
 
-    // --- Lint-style rules
-
-    // https://www.typescriptlang.org/tsconfig/#noPropertyAccessFromIndexSignature
-    //
-    // This setting was historically turned on (true) in @tsconfig/ember, 
-    // But it's mostly been unhelpful, and makes type-ergonomics worse.
-    "noPropertyAccessFromIndexSignature": false,
-
     // --- Compilation/integration settings
     // Setting `noEmitOnError` here allows tools trying to respect the tsconfig
     // to still emit code without breaking on errors.
