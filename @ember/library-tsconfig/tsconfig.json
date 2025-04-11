@@ -73,6 +73,8 @@
     "declarationMap": true,
     "emitDeclarationOnly": true,
     // This is the default, but is being included here for clarity
+    // it *may not* be set to true in any consumer of this base tsconfig,
+    // else declarations will not emit.
     "noEmit": false,
 
     // Don't implicitly pull in declarations from `@types` packages unless we
