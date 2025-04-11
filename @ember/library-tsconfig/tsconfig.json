@@ -61,13 +61,6 @@
     // to a decision on what they want their types to be.
     "noEmitOnError": false,
 
-    // We use Babel for emitting runtime code, because it's very important that
-    // we always and only use the same transpiler for non-stable features, in
-    // particular decorators. If you were to change this to `true`, it could
-    // lead to accidentally generating code with `tsc` instead of Babel, and
-    // could thereby result in broken code at runtime.
-    "noEmit": true,
-
     // Ember makes heavy use of decorators; TS does not support them at all
     // without this flag.
     "experimentalDecorators": true,
