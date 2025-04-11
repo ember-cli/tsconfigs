@@ -2,6 +2,17 @@
 
 ## Release (2025-04-11)
 
+* @ember/library-tsconfig 1.1.3 (patch)
+
+#### :bug: Bug Fix
+* `@ember/library-tsconfig`
+  * [#14](https://github.com/ember-cli/tsconfigs/pull/14) Remove redundant noEmits, update comments ([@bendemboski](https://github.com/bendemboski))
+
+#### Committers: 1
+- Ben Demboski ([@bendemboski](https://github.com/bendemboski))
+
+## Release (2025-04-11)
+
 * @ember/library-tsconfig 1.1.2 (patch)
 
 #### :bug: Bug Fix
