@@ -1,22 +1,12 @@
 {
   "solution": {
     "@ember/app-tsconfig": {
-      "impact": "patch",
-      "oldVersion": "1.0.2",
-      "newVersion": "1.0.3",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./@ember/app-tsconfig/package.json"
+      "oldVersion": "1.0.3"
     },
     "@ember/library-tsconfig": {
       "impact": "patch",
-      "oldVersion": "1.1.0",
-      "newVersion": "1.1.1",
+      "oldVersion": "1.1.1",
+      "newVersion": "1.1.2",
       "tagName": "latest",
       "constraints": [
         {
@@ -27,5 +17,5 @@
       "pkgJSONPath": "./@ember/library-tsconfig/package.json"
     }
   },
-  "description": "## Release (2025-04-10)\n\n* @ember/app-tsconfig 1.0.3 (patch)\n* @ember/library-tsconfig 1.1.1 (patch)\n\n#### :bug: Bug Fix\n* `@ember/app-tsconfig`, `@ember/library-tsconfig`\n  * [#10](https://github.com/ember-cli/tsconfigs/pull/10) Disable noPropertyAccessFromIndexSignature ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### :memo: Documentation\n* [#8](https://github.com/ember-cli/tsconfigs/pull/8) Add npm badges to the main readme ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2025-04-11)\n\n* @ember/library-tsconfig 1.1.2 (patch)\n\n#### :bug: Bug Fix\n* `@ember/library-tsconfig`\n  * [#11](https://github.com/ember-cli/tsconfigs/pull/11) For the library-tsconfig, emitDeclarationOnly + noEmit is actually required for declarations to be emitted. ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
