@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-04-11)
+
+* @ember/library-tsconfig 1.1.2 (patch)
+
+#### :bug: Bug Fix
+* `@ember/library-tsconfig`
+  * [#11](https://github.com/ember-cli/tsconfigs/pull/11) For the library-tsconfig, emitDeclarationOnly + noEmit is actually required for declarations to be emitted. ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-04-10)
 
 * @ember/app-tsconfig 1.0.3 (patch)
