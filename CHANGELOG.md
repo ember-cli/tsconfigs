@@ -1,5 +1,17 @@
 # Changelog
 
+## Release (2025-12-02)
+
+* @ember/app-tsconfig 2.0.0 (major)
+* @ember/library-tsconfig 2.0.0 (major)
+
+#### :boom: Breaking Change
+* `@ember/app-tsconfig`, `@ember/library-tsconfig`
+  * [#16](https://github.com/ember-cli/tsconfigs/pull/16) feat: set "target" to "es2024" ([@lukasnys](https://github.com/lukasnys))
+
+#### Committers: 1
+- Lukas Nys ([@lukasnys](https://github.com/lukasnys))
+
 ## Release (2025-04-11)
 
 * @ember/library-tsconfig 1.1.3 (patch)
