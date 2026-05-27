@@ -11,6 +11,6 @@
   "license": "MIT",
   "author": "",
   "devDependencies": {
-    "release-plan": "^0.16.0"
+    "release-plan": "^0.18.0"
   }
 }
