@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2026-05-28)
+
+* @ember/library-tsconfig 3.0.0 (major)
+
+#### :boom: Breaking Change
+* `@ember/library-tsconfig`
+  * [#22](https://github.com/ember-cli/tsconfigs/pull/22) Remove isolatedDeclarations from tsconfig.json ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#19](https://github.com/ember-cli/tsconfigs/pull/19) Add TypeScript configuration options for declarations ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :house: Internal
+* [#21](https://github.com/ember-cli/tsconfigs/pull/21) pnpm dlx create-release-plan-setup@latest --update ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-12-02)
 
 * @ember/app-tsconfig 2.0.0 (major)
