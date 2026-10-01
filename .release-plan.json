@@ -1,31 +1,35 @@
 {
   "solution": {
     "@ember/app-tsconfig": {
-      "impact": "major",
-      "oldVersion": "1.0.3",
-      "newVersion": "2.0.0",
+      "impact": "minor",
+      "oldVersion": "2.0.0",
+      "newVersion": "2.1.0",
       "tagName": "latest",
       "constraints": [
         {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./@ember/app-tsconfig/package.json"
     },
     "@ember/library-tsconfig": {
       "impact": "major",
-      "oldVersion": "1.1.3",
-      "newVersion": "2.0.0",
+      "oldVersion": "2.0.0",
+      "newVersion": "3.0.0",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "major",
           "reason": "Appears in changelog section :boom: Breaking Change"
+        },
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./@ember/library-tsconfig/package.json"
     }
   },
-  "description": "## Release (2025-12-02)\n\n* @ember/app-tsconfig 2.0.0 (major)\n* @ember/library-tsconfig 2.0.0 (major)\n\n#### :boom: Breaking Change\n* `@ember/app-tsconfig`, `@ember/library-tsconfig`\n  * [#16](https://github.com/ember-cli/tsconfigs/pull/16) feat: set \"target\" to \"es2024\" ([@lukasnys](https://github.com/lukasnys))\n\n#### Committers: 1\n- Lukas Nys ([@lukasnys](https://github.com/lukasnys))\n"
+  "description": "## Release (2026-10-01)\n\n* @ember/app-tsconfig 2.1.0 (minor)\n* @ember/library-tsconfig 3.0.0 (major)\n\n#### :boom: Breaking Change\n* `@ember/library-tsconfig`\n  * [#22](https://github.com/ember-cli/tsconfigs/pull/22) Remove isolatedDeclarations from tsconfig.json ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n  * [#19](https://github.com/ember-cli/tsconfigs/pull/19) Add TypeScript configuration options for declarations ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### :rocket: Enhancement\n* `@ember/app-tsconfig`, `@ember/library-tsconfig`\n  * [#23](https://github.com/ember-cli/tsconfigs/pull/23) feat: add resolveJsonModule to @ember/{library,app}-tsconfig ([@gbudjeakp](https://github.com/gbudjeakp))\n\n#### :house: Internal\n* [#21](https://github.com/ember-cli/tsconfigs/pull/21) pnpm dlx create-release-plan-setup@latest --update ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 2\n- Xzebaztian ([@gbudjeakp](https://github.com/gbudjeakp))\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
