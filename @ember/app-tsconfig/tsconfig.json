@@ -77,6 +77,13 @@
     // This does not require extensions, but allows them.
     "allowImportingTsExtensions": true,
 
+    // Allow importing JSON files directly. Node 24 strips TypeScript types
+    // and natively supports JSON module imports via `with { type: 'json' }`,
+    // which is now standard; TypeScript needs this flag to type-check those
+    // imports. Common uses include reading package.json inside build scripts
+    // and root-level config files.
+    "resolveJsonModule": true,
+
 
     // Don't implicitly pull in declarations from `@types` packages unless we
     // actually import from them AND the package in question doesn't bring its
